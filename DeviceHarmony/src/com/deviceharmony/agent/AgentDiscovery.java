@@ -79,6 +79,7 @@ public class AgentDiscovery {
                 }
             } catch (SocketTimeoutException e) {
                 // Expected: timeout lets us re-check the running flag without blocking stop()
+                continue;
             } catch (Exception e) {
                 if (running) {
                     e.printStackTrace();

@@ -227,7 +227,7 @@ public class DashboardServlet extends HttpServlet {
             // Header
             "<header class='hdr'>" +
             "<div class='hdr-brand'>&#128279; DeviceHarmony</div>" +
-            "<span class='hdr-ctr' id='devCtr'>Loading&#8230;</span>" +
+            "<span class='hdr-ctr' id='devCtr'>Loading&hellip;</span>" +
             "<div class='hdr-space'></div>" +
             "<div class='hdr-acts'>" +
             "<button class='btn-theme' onclick='toggleTheme()' id='themeBtn' title='Toggle theme'>&#127769;</button>" +
@@ -238,7 +238,7 @@ public class DashboardServlet extends HttpServlet {
             // ── Sidebar ──
             "<div class='sidebar'>" +
             "<div class='sb-hdr'>Connected Devices</div>" +
-            "<div class='sb-scroll' id='deviceList'><div class='f-empty'>Loading&#8230;</div></div>" +
+            "<div class='sb-scroll' id='deviceList'><div class='f-empty'>Loading&hellip;</div></div>" +
             "</div>" +
             // ── Main ──
             "<div class='main'>" +
@@ -250,7 +250,7 @@ public class DashboardServlet extends HttpServlet {
             "<div class='tab-c active' id='tab-files'>" +
             "<div class='ftbar'>" +
             "<div class='bc' id='breadcrumb'><span style='color:var(--faint);font-size:.82rem'>Select a device</span></div>" +
-            "<input type='text' class='srch' id='srchBox' placeholder='&#128269; Search&#8230;' oninput='renderFiles()' disabled>" +
+            "<input type='text' class='srch' id='srchBox' placeholder='&#128269; Search&hellip;' oninput='renderFiles()' disabled>" +
             "<select class='sort-sel' id='sortSel' onchange='renderFiles()' disabled>" +
             "<option value='name'>Name &#8593;</option>" +
             "<option value='size'>Size</option>" +
@@ -450,7 +450,7 @@ public class DashboardServlet extends HttpServlet {
             "function loadFiles(){" +
             "if(!selectedDevice)return;" +
             "document.getElementById('fileArea').innerHTML=" +
-            "'<div class=\"spin-w\"><div class=\"spin\"></div><div>Loading files&#8230;</div></div>';" +
+            "'<div class=\"spin-w\"><div class=\"spin\"></div><div>Loading files&hellip;</div></div>';" +
             "updateBreadcrumb();" +
             "fetch('/api/files/list?device='+encodeURIComponent(selectedDevice.device_id)+'&path='+encodeURIComponent(currentPath))" +
             ".then(function(r){return r.json();})" +
