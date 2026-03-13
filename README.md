@@ -1,4 +1,4 @@
-# MiniProject-deviceHarmony
+# Project-deviceHarmony
 This project aims to connect devices such as pc, laptops, mobile, tab in a web-app and lets access to all the files in every device using a centralized dashboard.
 
 The dashboard allows the users to connect devices available on LAN and let them access files from every device through a central device.
