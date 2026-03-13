@@ -47,7 +47,7 @@ public class DeviceHarmonyServer {
             webServer.start();
             
             System.out.println("\n========================================");
-            System.out.println("✓ DeviceHarmony Server is running!");
+            System.out.println(" DeviceHarmony Server is running!");
             System.out.println("========================================");
             System.out.println("Local Access:   http://localhost:8080");
             System.out.println("Network Access: http://" + serverIp + ":8080");
@@ -91,7 +91,7 @@ public class DeviceHarmonyServer {
             dbManager.close();
         }
         
-        System.out.println("✓ Shutdown complete");
+        System.out.println(" Shutdown complete");
         System.exit(0);
     }
 }
